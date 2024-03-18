@@ -1,0 +1,88 @@
+body,
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    background-color: #FDA65D;
+    color: #ffffff;
+}
+
+/* Header & Nav */
+header {
+    background-color: #FF8243;
+}
+
+header nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+    height: 50px;
+    width: 125px;
+    margin: 0px 10px;
+}
+
+header nav ul li a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+header nav ul li a.current,
+header nav ul li a:hover {
+    background-color: #FDA65D;
+}
+
+/* Main of index.html */
+main {
+    padding: 10px;
+}
+
+#joke-container {
+    height: auto;
+    width: 95%;
+    margin: 20px auto 40px auto;
+    border-radius: 20px;
+    border: solid 2px #FFD07F;
+    padding: 20px;
+}
+
+#joke-container h1 {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#joke-flex {
+    margin: 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+#joke-left {
+    float: left;
+    width: 20%;
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+#joke-right {
+    float: right;
+    width: 78%;
+    height: 200px;
+    background-color:beige;
+
+}
