@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="../JavaScript/script.js" defer></script>
+    <script src="script.js" defer></script>
     <title>CSC300X HW5 Part 2</title>
 </head>
 
@@ -32,16 +32,39 @@
             <h1>Jokes!</h1>
             <div id="joke-flex">
                 <div id="joke-left">
-                    <menu>
-                        <li>
-                            <button id="joke-" onclick="getJoke()">Get Joke</button>
+                    <menu id="joke-menu">
+                        <li id="search-li">
+                            <label for="search-field">Search: </label>
+                            <input id="search-field" type="text">
                         </li>
                     </menu>
                 </div>
                 <div id="joke-right">
-
+                    <ul id="joke-list">
+                    </ul>
                 </div>
             </div>
+        </section>
+
+        <section id="add-joke-container">
+            <h2>Add a joke!</h2>
+            <form id="add-joke-form">
+                <div>
+                    <label for="add-joke-category">Joke Category: </label>
+                    <input id="add-joke-category" type="text" name="category">
+                </div>
+                <div>
+                    <label for="add-joke-joke">Joke: </label>
+                    <input id="add-joke-joke" type="text" name="joke">
+                </div>
+                <div>
+                    <label for="add-joke-response">Joke Response: </label>
+                    <input id="add-joke-response" type="text" name="response">
+                </div>
+                <div>
+                    <button id="add-joke-button" type="submit">Add Joke</button>
+                </div>
+            </form>
         </section>
 
     </main>

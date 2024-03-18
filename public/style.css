@@ -51,7 +51,8 @@ main {
     padding: 10px;
 }
 
-#joke-container {
+#joke-container,
+#add-joke-container {
     height: auto;
     width: 95%;
     margin: 20px auto 40px auto;
@@ -60,7 +61,8 @@ main {
     padding: 20px;
 }
 
-#joke-container h1 {
+#joke-container h1,
+#add-joke-container h2 {
     text-align: center;
     margin: 5px 0px;
 }
@@ -72,17 +74,62 @@ main {
     gap: 2%;
 }
 
+#joke-flex ul,
+#joke-flex menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#joke-flex ul li,
+#joke-flex menu li {
+    padding: 5px 0px;
+}
+
 #joke-left {
     float: left;
     width: 20%;
-    height: 200px;
-    background-color: antiquewhite;
+    height: max-content;
 }
 
 #joke-right {
     float: right;
     width: 78%;
-    height: 200px;
-    background-color:beige;
+    height: max-content;
+}
 
+#add-joke-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#add-joke-container div label,
+#search-li label {
+    display: block;
+    margin: 5px 0px;
+}
+
+#add-joke-container div input,
+#search-li input {
+    border-radius: 10px;
+    border: 2px solid #FFD07F;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    width: -webkit-fill-available;
+}
+
+#add-joke-button, #joke-menu li button {
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FFD07F;
+    border: none;
+    outline: none;
+}
+
+#add-joke-button:hover, #joke-menu li button:hover {
+    background-color: #ffc86a;
 }

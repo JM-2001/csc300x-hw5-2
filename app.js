@@ -3,12 +3,16 @@
 
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const fs = require("fs").promises;
 const multer = require("multer");
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
+app.use(express.static("public")); 
+app.use(cors());
+
 app.use(multer().none());
 
 let categories = ['funnyJoke', 'lameJoke'];
@@ -104,4 +108,8 @@ app.post("/jokebook/joke/new", (req, res) => {
 });
 
 const PORT = process.env.PORT || 8000;
-app.listen(PORT);
+app.listen(PORT, function () {
+    console.log('Example app listening on port: '+PORT+"!");
+});
+
+
